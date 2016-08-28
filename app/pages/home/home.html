@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<p>
+	{{centerLat}}
+	{{centerLong}}
+	
+</p>
+<p>{{counter}}</p>
+<p>
+{{distance}}
+</p>
+
+<button full (click)="getCenter();">set center</button>
+<button full (click)="watchfence();"> watch</button>
+<button full (click)="clearAll();"> Clear All locations</button>
+
+</ion-content>
