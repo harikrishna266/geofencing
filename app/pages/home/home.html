@@ -10,11 +10,19 @@
 <p>
 	{{centerLat}}
 	{{centerLong}}
-	
 </p>
-<p>{{counter}}</p>
+<ion-item>
+  <ion-range [(ngModel)]="raduis">
+    <ion-icon range-left small name="trending-down"></ion-icon>
+    <ion-icon range-right name="trending-up"></ion-icon>
+  </ion-range>
+</ion-item>
+<p>event triggered: {{counter}}</p>
 <p>
-{{distance}}
+distance : {{distance}}
+</p>
+<p>
+raduis : {{raduis}}
 </p>
 
 <button full (click)="getCenter();">set center</button>
